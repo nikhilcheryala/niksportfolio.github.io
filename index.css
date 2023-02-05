@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Catamaran:wght@300&family=Nanum+Gothic&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    /* background-color: rgb(116, 158, 172); */
+}
+.sidebar{
+    background-color:rgb(195, 195, 195);
+    /* width: 400px; */
+    height: 150vh;
+    position:absolute;
+    font-family: 'Nanum Gothic', sans-serif;
+    transition:transform 0.3s ease-in-out;
+}
+.sidebar nav{
+    padding: 38px;
+}
+.sidebar nav li{
+    list-style: none;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 24px 0;
+}
+.sidebar nav li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.sidebar nav li a:hover{
+    color: rgb(82, 95, 95);
+}
+.main{
+    /* background-color: yellow; */
+    width: 88vw;
+}
+.container{
+    display: flex;
+}
+.infocontainer{
+    /* background-color: aqua */
+    height: 58vh;
+    width: 80vw;
+    margin: 143px auto;
+    display: flex;
+    justify-content: space-around ;
+}
+.devpic img{
+    height: 58vh;
+    transition: 0.8s ease-in-out;
+}
+.devpic img:hover{
+    transform: scale(1.19);
+}
+.devinfo{
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Catamaran', sans-serif;
+}
+.hi{
+    font-size: 3em;
+}
+.name{
+    font-size: 2.8em;
+    font-weight: bold;
+    font-family: 'Catamaran', sans-serif;
+}
+.about{
+    font-size: 2em;
+}
+.more{
+    font-size: 1em;
+    font-family: 'Catamaran', sans-serif;
+}
+.buttons{
+    margin-top: 2.2em;
+}
+.buttons button{
+    padding: 8px 12px;
+    background-color: rgb(61, 150, 188);
+    border-radius: 22px;
+    border-color: rgb(41, 146, 153);
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    margin: 0 3px;
+    cursor: pointer;
+}
+.buttons button:hover{
+    color: rgb(61, 150, 188);
+    background-color: white;
+}
+.container1 h1{
+    text-align: center;
+    margin: 12px 0px;
+    display: block;
+}
+.myform{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.myinput{
+    width: 52%;
+    padding: 9px;
+    margin: 8px ;
+    font-size: 15px;
+    border: 2px solid rgb(89, 85, 85);
+    border-radius: 8px;
+    outline: none;
+}
+.btn-sm{
+    padding: 6px 9px;
+    background-color: rgb(61, 150, 188);
+    border-radius: 22px;
+    border-color: rgb(41, 146, 153);
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    margin: 7px 3px;
+    cursor: pointer;
+}
+.btn-sm:hover{
+    color: rgb(61, 150, 188);
+    background-color: white;
+}
+.container1{
+    min-height: 80vh;
+    margin: 20px 0px;
+}
+.container1 h1{
+    align-items: center;
+    padding-top: 100px;
+}
+.blogItem{
+ margin: 20px;   
+ font-family: 'Catamaran', sans-serif;
+}
+.btn-sm a{
+ text-decoration:none;
+ color:white;
+}
+p{
+    font-family: 'Nanum Gothic', sans-serif;
+}
+h1{
+    font-family: 'Catamaran', sans-serif;
+    margin: 20px;
+}
+.intro h2{
+    font-family: 'Catamaran', sans-serif;
+    margin: 13px;
+}
+.intro p{
+    font-family: 'Nanum Gothic', sans-serif;
+    margin: 13px;
+}
+.intro{
+    margin: 40px 110px;
+}
+.skillcontainer{
+    padding:12px;
+}
+.skillitem{
+    font-family: 'Catamaran', sans-serif;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+.skill{
+    width: 240px;
+    height: 7px;
+    background-color: red;
+    border: 2px solid black;
+}
+.hundred{
+width: 300px;
+background-color: blue;
+}
+.fifty{
+width: 150px;
+background-color: orange;
+}
+.t5{
+ width: 80px;
+ background-color: aqua ;
+}
+.blogcontainer{
+    margin: 45px 100px;
+}
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+.ham{
+    margin-top: 9px;
+    margin-left: 10px;
+}
+.cross{
+    margin-left: 150px;
+    margin-top: 8px;
+    opacity: 0.7;
+}
+.sidebargo{
+    transform: translate(-400px,0px);
+    position: absolute;
+}
+@media screen and (max-width: 930px) {
+    .devpic{
+        display: none;
+    }
+    .intro,.blogcontainer{
+        margin: 50px 8px;
+    }
+    .devinfo{
+        font-size: 13px;
+    }
+  }
