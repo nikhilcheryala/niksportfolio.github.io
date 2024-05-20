@@ -46,7 +46,7 @@
 }
 .devpic img{
     height: 58vh;
-    border-radius: 80px;
+    border-radius: 190px;
     transition: 0.8s ease-in-out;
 }
 .devpic img:hover{
